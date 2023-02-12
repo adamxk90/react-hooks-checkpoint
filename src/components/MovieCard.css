@@ -1,0 +1,17 @@
+
+
+.MovieCard {
+  max-width: 50%;
+  justify-content: center;
+  width: fit-content;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+}
+.MovieCard > .Info{
+  max-width: 400px;
+  margin: 25px auto;
+}
