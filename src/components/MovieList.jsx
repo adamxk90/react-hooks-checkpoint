@@ -1,6 +1,8 @@
+import React from 'react'
 import { useState } from 'react'
 import MovieCard from './MovieCard'
 import movies from '../data/movies'
+import { Link } from 'react-router-dom'
 
 function MovieList() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -27,9 +29,13 @@ function MovieList() {
         .filter((movie) =>
           movie.title.toLowerCase().includes(searchTerm.toLowerCase())
         )
-        .filter((movie) => movie.rating[0].includes((searchRating)))
+        .filter((movie) => movie.rating[0].includes(searchRating))
         .map((movie) => (
-          <MovieCard key={movie.id} {...movie} />
+          <div key={movie.id}>
+            <Link to={`/Movies/${movie.slug}`} className="movieLink">
+              <MovieCard {...movie} />
+            </Link>
+          </div>
         ))}
     </>
   )

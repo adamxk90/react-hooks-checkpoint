@@ -1,6 +1,51 @@
 .App {
   text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  justify-content: center;
+  position: relative;
 }
+.homePage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 250%);  
+}
+
 h1 {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.movieLink {
+  text-decoration: none;
+  color: black;
+}
+.movieLink:hover > div {
+  background-color: lightblue;
+  transform: scale(1.05);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightblue;
+  text-decoration: none;
+}
+
+.activeLink {
+  color: darkred;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.singleMovieClass {
+  margin: auto;
+  display: block;
+  font-size: 20px;
+}
+
+.singleMovieClass > a {
+  font-size: 18px;
+  display: block;
 }

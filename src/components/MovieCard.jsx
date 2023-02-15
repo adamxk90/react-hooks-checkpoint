@@ -3,7 +3,7 @@ function MovieCard(props) {
   console.log(props)
   const { id, title, description, posterurl } = props
   return (
-    <div className="MovieCard">
+    <div className="MovieCard" >
       <div>
         <img src={posterurl} alt={title} width="200" height="auto"></img>
       </div>
