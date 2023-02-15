@@ -5,13 +5,7 @@
   justify-content: center;
   position: relative;
 }
-.homePage {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 250%);  
-}
+
 
 h1 {
   font-size: 18px;
@@ -48,4 +42,11 @@ nav {
 .singleMovieClass > a {
   font-size: 18px;
   display: block;
+}
+.homePage {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 250%);  
 }
